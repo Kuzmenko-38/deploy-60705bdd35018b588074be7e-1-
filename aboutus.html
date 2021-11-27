@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Найбільші військові виставки України</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://kit.fontawesome.com/c1d16454f2.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/media.css" type="text/css" media="all and (max-width:900px)">
+	
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="Home.html">Військові виставки України</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="News.html">News</a></li>
+					<li><a href="Albom.html">Albom</a></li>
+					<li class="active" ><a href="AboutUs.html">About Us</a></li>
+					<li><a href="Login.html"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h1>Міністерство Оборони України</h1>
+					<h2>Найбільші військові виставки України</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="prof-cont">
+		<div class="row">
+			<div class="col-md-3 profile box">
+				<aside>
+					<img src="img/tic.jpg" alt="ZSU" class="img-circle">
+					<h4>Defence of Ukraine</h4>
+					<p>Software Eng. @DefenceU</p>
+					<a href="https://twitter.com/DefenceU?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @DefenceU</a>
+					<hr>
+					<p>Share this page:</p>
+					<ul>
+						<li><a href=""><i class="fa fa-twitter"></i></a></li>
+						<li><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li><a href=""><i class="fab fa-google"></i></a></li>
+					</ul>
+				</aside>
+			</div>
+			<div class="col-lg-9">
+				<h1>location</h1>
+				<div id="map"></div>
+			</div>
+		</div>
+	</div>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fab fa-google"></i></a>
+			</div>
+		</div>
+	</div>	
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	 <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJvxAuUbxmTwXp6YEGyIGT3gNgp87B6YE&callback=initMap"></script>
+    <script>
+
+function initMap() {
+
+  var uluru = {lat: 50.44311, lng: 30.47913};
+
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+</script>
+</body>
+</html>
